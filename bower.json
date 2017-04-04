@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "scheglov"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1",
+    "normalize-css": "normalize.css#^6.0.0"
+  }
+}
