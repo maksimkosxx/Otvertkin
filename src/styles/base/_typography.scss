@@ -1,0 +1,52 @@
+
+
+@font-face {
+  font-family: 'ProximaNova', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local('ProximaNovaRegular'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local('MuseoSansCyrl500'),
+  url('../fonts/museosanscyrl500.woff') format('woff'),
+  url('../fonts/museosanscyrl500.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'MuseoCyrl', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  src: local('MuseoCyrl900'),
+  url('../fonts/museo_cyrl900.woff') format('woff'),
+  url('../fonts/museo_cyrl900.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'IskraCYR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('IskraCyrLight'),
+  url('../fonts/IskraCYR-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'IskraCYR', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local('IskraCyrRegular'),
+  url('../fonts/IskraCYR-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'IskraCYR', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('IskraCyrMedium'),
+  url('../fonts/IskraCYR-Medium.otf') format('otf');
+}
+
