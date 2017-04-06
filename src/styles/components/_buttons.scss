@@ -1,0 +1,10 @@
+
+.btn--header {
+  @include button(80%, 66px, 18px, linear-gragient(to left, $green, #79ce6d), $white, $font-family-medium, $font-size-medium + 6px, 66px);
+}
+.btn--green {
+  @include button(305px, 58px, 25px, $green, $white, $font-family-medium, $font-size-medium + 6px, 58px);
+}
+.btn--corel {
+  @include button(305px, 58px, 25px, $coral, $white, $font-family-medium, $font-size-medium + 6px, 58px);
+}

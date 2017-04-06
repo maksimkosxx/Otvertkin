@@ -1,0 +1,36 @@
+.header {
+  padding-top: 10px;
+  @include clearfix;
+}
+.logo {
+  @include make-lg-column(5);
+  .logo__image {
+    @include make-lg-column(2);
+  }
+  .logo__text {
+    @include make-lg-column(9);
+    @include font-face($font-family-proxima, 22px, 6.5em, $white)
+  }
+}
+.phone {
+    @include make-lg-column(3);
+    @include make-lg-column-offset(3);
+}
+.menu__btn {
+  float: left;
+  width: 72px;
+  height: 53px;
+  padding: 10px;
+  border-radius: 18px;
+  span {
+    display: block;
+    width: 36px;
+    height: 4px;
+    margin-bottom: 4px;
+    background: $white;
+  }
+
+}
+.menu__navigation {
+  display: none;
+}

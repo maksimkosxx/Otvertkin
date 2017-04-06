@@ -5,8 +5,8 @@
 //vendors/
 //utils/
 //base/
-//layout/
 //components/
+//layout/
 //pages/
 //themes/
 //
@@ -42,6 +42,18 @@
 //  }
 //}
 
-@import 'utils/mixins';
+@import 'vendors/bootstrap';
 
-@import 'base/typography';
+@import 'utils/variables',
+        'utils/mixins';
+
+
+@import 'base/reset',
+        'base/typography',
+        'base/base';
+
+@import 'components/buttons';
+
+@import 'layout/header';
+
+@import 'pages/home';

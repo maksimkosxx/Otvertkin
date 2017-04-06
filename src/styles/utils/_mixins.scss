@@ -1,20 +1,79 @@
-@mixin font-face($font-family, $file-path, $weight:normal, $style:normal, $assets-pipeline: false) {
-  @font-face {
-    font-family: $font-family;
-    font-weight: $weight;
-    font-style: $style;
+
+// fonts mixin
+
+@mixin font-face($family, $size, $height, $color) {
+  font: $size $family;
+  line-height: $height;
+  color: $color;
+}
+
+// fonts mixin END
+
+
+// links mixin
+
+@mixin links($link, $focus, $hover, $active) {
+
+  transition: all 0.2s linear;
+  text-decoration: underline;
+  color: $link;
+
+  &:focus {
+    color: $focus;
   }
-  @if $assets-pipeline == true {
-    src: font-url('#{$file-path}.eot');
-
-    src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
-    font-url('#{$file-path}.woff') format('woff'),
-    font-url('#{$file-path}.ttf') format('ttf');
-
-  } @else {
-    src: url('#{$file-path}.eot');
-    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
-    url('#{$file-path}.woff') format('woff'),
-    url('#{$file-path}.ttf') format('ttf');
+  &:hover {
+    color: $hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $active;
   }
 }
+
+// links mixin END
+
+// button mixin
+
+@mixin button($width, $height, $radius, $background, $color, $family, $font, $line-height) {
+  width: $width;
+  min-height: $height;
+  border-radius: $radius;
+  border: none;
+  outline: none;
+  background: $background;
+  color: $color;
+  font: $font $family;
+  line-height: $line-height;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+
+// button mixin END
+
+
+
+// responsive mixin
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media == handhelds + tablets {
+    @media only screen and (min-width: 320px) and (max-width: 1000px) {
+      @content;
+    }
+  } @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      @content;
+    }
+  } @else if $media == laptop {
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// responsive mixin END

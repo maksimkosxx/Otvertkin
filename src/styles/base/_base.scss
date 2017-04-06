@@ -1,0 +1,36 @@
+html,
+body {
+  @include font-face($font-family-base, $font-size-base, $line-height-base, $black);
+}
+
+a {
+  @include font-face($font-family-base, $font-size-base, $line-height-base, $black);
+  @include links($black, $coral, $black, $coral);
+}
+
+h1 {
+  @include font-face($font-family-medium, $font-size-h1, $line_height_title, $black);
+}
+
+.title {
+  margin: 20px 0;
+  @include font-face($font-family-medium, $font_size__title, $line_height_title, $black);
+}
+
+.slogan {
+  margin-bottom: 20px;
+  @include font-face($font-family-regular, $font-size-large, $line-height-base, $coral);
+}
+
+
+a.phone__number {
+  text-decoration: none;
+  @include font-face($font-family-medium, $font-size-large + 7px, 4.0em, #333638);
+  &:hover,
+  &:active {
+    color: $coral;
+  }
+}
+.menu__btn {
+
+}
