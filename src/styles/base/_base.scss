@@ -12,13 +12,19 @@ h1 {
   @include font-face($font-family-medium, $font-size-h1, $line_height_title, $black);
 }
 
+.custom-block {
+  min-height: 520px;
+  padding: 9vh 0;
+  box-sizing: border-box;
+  @include clearfix;
+}
+
 .title {
-  margin: 20px 0;
+  margin: 20px 0 0;
   @include font-face($font-family-medium, $font_size__title, $line_height_title, $black);
 }
 
 .slogan {
-  margin-bottom: 20px;
   @include font-face($font-family-regular, $font-size-large, $line-height-base, $coral);
 }
 
@@ -30,7 +36,10 @@ a.phone__number {
   &:active {
     color: $coral;
   }
-}
-.menu__btn {
-
+  @include respond-to(handhelds) {
+    @include font-face($font-family-medium, 25px, $line-height-base, #333638);
+  }
+  @include respond-to(tablets) {
+    @include font-face($font-family-medium, $font-size-large + 7px, 3em, #333638);
+  }
 }

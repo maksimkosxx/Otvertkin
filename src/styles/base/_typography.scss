@@ -37,9 +37,10 @@
 @font-face {
   font-family: 'IskraCyrRegular';
   font-style: normal;
-  font-weight: 500;
-  src:
-  url('/fonts/IskraCYR-Regular.otf') format('otf');
+  font-weight: 400;
+  src: url('/fonts/IskraCyrRegular/iskracyrregular.woff') format('woff'),
+   url('/fonts/IskraCyrRegular/iskracyrregular.ttf') format('ttf'),
+   url('/fonts/IskraCyrRegular/iskracyrregular.otf') format('otf');
 }
 
 @font-face {
@@ -52,5 +53,32 @@
   url('/fonts/iskracyrmedium.ttf') format('ttf'),
   url('/fonts/iskracyrmedium.svg') format('svg');
 }
+@font-face {
+  font-family: 'IskraCyrItalic';
+  font-style: italic;
+  font-weight: 600;
+  src:
+          url('/fonts/IskraCyr-Italic/ISKRACYR-ITALIC.woff') format('woff'),
+          url('/fonts/IskraCyr-Italic/ISKRACYR-ITALIC.otf') format('otf'),
+          url('/fonts/IskraCyr-Italic/ISKRACYR-ITALIC.ttf') format('ttf'),
+          url('/fonts/IskraCyr-Italic/ISKRACYR-ITALIC.svg') format('svg');
+}
+@font-face {
+  font-family: 'MyriadProBold';
+  font-style: normal;
+  font-weight: 600;
+  src:
+  url('/fonts/MyriadPro/MyriadProBold.woff') format('woff'),
+  url('/fonts/MyriadPro/MyriadProBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  font-style: normal;
+  font-weight: 400;
+  src:
+  url('/fonts/MyriadPro/MyriadProRegular.woff') format('woff'),
+  url('/fonts/MyriadPro/MyriadProRegular.ttf') format('ttf');
+}
+
 
 

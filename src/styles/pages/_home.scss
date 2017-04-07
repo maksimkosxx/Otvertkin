@@ -1,4 +1,87 @@
 .wrapper--blue {
-  min-height: 690px;
-  background: $light-blue;
+  background-image: url(/images/icons/screw.png),
+                    linear-gradient(to right, #71b6d0, #6aa0db);
+}
+.services {
+  padding: 9vh 0 5vh;
+  box-sizing: border-box;
+  @include clearfix;
+  &__image {
+    margin-top: 30px;
+  }
+  &__items {
+    padding-left: 70px;
+  }
+  &-item {
+    float: left;
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    min-height: 220px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    &__header {
+      max-width: 180px;
+      min-height: 65px;
+      margin-bottom: 13px;
+      overflow: hidden;
+    }
+  }
+}
+
+.services-header__price {
+  float: left;
+  width: 64px;
+  height: 34px;
+  margin-top: 20px;
+  -moz-border-radius: 110px / 60px;
+  -webkit-border-radius: 110px / 60px;
+  border-radius: 110px / 60px;
+  background: $green;
+  box-sizing: border-box;
+  text-align: center;
+  @include font-face($font-myriad-bold, 16px, 32px, $white);
+}
+.services-header__icon {
+  float: right;
+}
+.services-item__links {
+  div {
+    margin-bottom: 10px;
+    @include font-face($font-family-regular, $font-size-medium, $line-height-base, $black);
+  }
+  a {
+    display: block;
+    @include font-face($font-myriad-regular, $font-size-base, 25px, #7a8f9f);
+  }
+}
+.wrapper--grey {
+  background: $grey;
+}
+.wrapper--lilac {
+  background: $lilac;
+}
+.wrapper--coral {
+  background: $coral;
+}
+.diagnostics,
+.guarantee {
+  .slogan {
+    color: $white;
+  }
+}
+.custom-block__link {
+  display: block;
+  margin-top: 30px;
+  @include font-face($font-family-medium, $font-size-medium, 22px, $black);
+}
+.guarantee {
+
+  .custom-block-image {
+    margin-top: 25px;
+  }
+}
+.wrapper--dark-grey {
+  background: #e6dcd5;
 }
