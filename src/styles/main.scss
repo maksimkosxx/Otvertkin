@@ -1,5 +1,4 @@
-//Файлы должны быть импортированы в
-// соответствии с папкой размещения,
+//Файлы должны быть импортированы в соответствии с папкой размещения,
 // один за другим, в соответствуещем порядке:
 //
 //vendors/
@@ -25,22 +24,8 @@
 //@import 'utils/mixins';
 //@import 'utils/placeholders';
 //
-//
-//$breakpoints: (
-//  'medium': (min-width: 800px),
-//  'large': (min-width: 1000px),
-//  'huge': (min-width: 1200px),
-//);
-//@mixin respond-to($breakpoint) {
-//  @if map-has-key($breakpoints, $breakpoint) {
-//    @media #{inspect(map-get($breakpoints, $breakpoint))} {
-//      @content;
-//    }
-//  } @else {
-//    @error 'Не указано значение для `#{$breakpoint}`. '
-//         + 'Пожалуйста, убедитесь, что точка остановки объявлена в карте `$breakpoints`.';
-//  }
-//}
+
+
 
 @import 'vendors/bootstrap';
 
@@ -55,6 +40,10 @@
 @import 'components/buttons';
 
 @import 'layout/header',
-        'layout/promo';
+        'layout/promo',
+        'layout/contacts',
+        'layout/map',
+        'layout/footer';
+
 
 @import 'pages/home';

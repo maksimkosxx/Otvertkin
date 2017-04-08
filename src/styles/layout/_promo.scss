@@ -1,25 +1,25 @@
 .promo {
   padding: 3vh 0 12vh;
-
   h1 {
     margin-bottom: 25px;
     span {
       color: $white;
     }
   }
-  .promo-text__description {
+  &-text__description {
     @include font-face($font-family-base, $font-size-medium, $height_big, $black);
   }
-}
-.promo__image {
-  @include clearfix;
-  a {
-    float: right;
-    display: block;
-    margin-top: 40px;
-    @include font-face($font-family-base, $font-size-medium, $height_big, $black);
+  &__image {
+    @include clearfix;
+    a {
+      float: right;
+      display: block;
+      margin-top: 40px;
+      @include font-face($font-family-base, $font-size-medium, $height_big, $black);
+    }
   }
 }
+
 .price__cloud {
   position: relative;
   float: right;

@@ -1,0 +1,34 @@
+.wrapper--contacts {
+  background: #e8e8e8;
+}
+.contacts {
+  padding: 8vh 0 10vh;
+  box-sizing: border-box;
+  @include clearfix;
+  &__title {
+    padding-left: 10px;
+  }
+}
+.contacts-item {
+  position: relative;
+  margin: 15px 50px 0 0;
+  &__phone {
+    @include font-face($font-family-medium, 26px, 42px, $black);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: $white;
+  }
+  &:last-child {
+    margin-right: 0;
+    &::after {
+      display: none;
+    }
+  }
+}
