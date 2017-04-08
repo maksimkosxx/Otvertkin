@@ -22,7 +22,9 @@
   @include button(85%, 58px, 25px, $coral, $white, $font-family-medium, $font-size-medium + 6px, 58px);
   text-transform: uppercase;
   letter-spacing: 1px;
+  &:active,
   &:hover {
-
+    background: #c86055;
   }
+
 }

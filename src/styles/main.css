@@ -1083,6 +1083,8 @@ a.phone__number {
   transition: all 0.2s linear;
   text-transform: uppercase;
   letter-spacing: 1px; }
+  .btn--coral:active, .btn--coral:hover {
+    background: #c86055; }
 
 .header {
   padding-top: 10px; }
@@ -1249,7 +1251,7 @@ a.phone__number {
   background: #e8e8e8; }
 
 .contacts {
-  padding: 8vh 0 10vh;
+  padding: 10vh 0 7vh;
   box-sizing: border-box; }
   .contacts:before, .contacts:after {
     content: " ";
