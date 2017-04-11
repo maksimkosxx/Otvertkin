@@ -1,0 +1,34 @@
+.order-form {
+  margin-top: 40px;
+  form {
+    label {
+      display: none;
+    }
+    input[type='text'] {
+      @include make-lg-column(3);
+      height: 40px;
+      margin-right: 10px;
+      border: none;
+    }
+    input[type='submit'] {
+      @include make-lg-column(4);
+      width: 100%;
+      padding-top: 0;
+      height: 55px;
+      margin-top: -7px;
+      border: none;
+      border-radius: 13px;
+      @include font-face($font-family-medium, 21px, 40px, $white);
+      background: #4dbca1;
+      outline: none;
+      &:hover {
+        background: #43ac93;
+        transition: all 0.2s linear;
+      }
+      &:active {
+        background: #5dd4b7;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}

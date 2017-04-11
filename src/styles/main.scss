@@ -18,7 +18,6 @@
 //
 //@import 'vendors/bootstrap';
 //@import 'vendors/jquery-ui';
-//
 //@import 'utils/variables';
 //@import 'utils/functions';
 //@import 'utils/mixins';
@@ -26,12 +25,11 @@
 //
 
 
-
 @import 'vendors/bootstrap';
 
 @import 'utils/variables',
-        'utils/mixins';
-
+        'utils/mixins',
+        'utils/placeholders';
 
 @import 'base/reset',
         'base/typography',
@@ -40,10 +38,15 @@
 @import 'components/buttons';
 
 @import 'layout/header',
+        'layout/breadcrumbs',
         'layout/promo',
+        'layout/custom-blocks',
+        'layout/advantages',
+        'layout/info',
+        'layout/forms',
         'layout/contacts',
         'layout/map',
         'layout/footer';
 
-
-@import 'pages/home';
+@import 'pages/home',
+        'pages/about';

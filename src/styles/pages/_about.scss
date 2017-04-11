@@ -1,0 +1,60 @@
+.wrapper--inner {
+  background: #7dc2c7;
+}
+.custom-block.page--about {
+  min-height: inherit;
+  padding: 0 0 7vh;
+  .custom-block__text {
+    margin-top: 40px;
+  }
+}
+.staff {
+  padding-bottom: 10vh;
+  overflow: hidden;
+  &__title {
+    color: #7dc2c7;
+  }
+  &__content {
+    margin-top: 55px;
+  }
+}
+.staff-item {
+  &__face {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 220px;
+  }
+  .face-img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .nimbus-img {
+    position: absolute;
+    top: -3%;
+    left: 25%;
+  }
+  .cap-img {
+    position: absolute;
+    top: -2%;
+    left: 22%;
+  }
+  .flashes-img {
+    position: absolute;
+    top: -10%;
+    left: 22%;
+  }
+  &__name {
+    margin: 5px 0 0;
+    @include font-face($font-family-medium, 20px, 28px, $black);
+  }
+  &__position {
+    margin: 0 0 7px;
+    @include font-face($font-ubuntu-regular, 13px, 20px, $coral);
+  }
+  &__description {
+    @include font-face($font-ubuntu-regular, 11px, 14px, $black);
+  }
+
+}
+

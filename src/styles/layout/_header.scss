@@ -4,6 +4,7 @@
 }
 .logo {
   &__image {
+    display: block;
     padding-left: 0;
   }
   &__text {
@@ -21,6 +22,7 @@
 .phone {
     float:right!important;
     text-align: right;
+    background: url(/images/icons/phone.png) 3% 55% no-repeat;
 }
 .menu {
   float:right!important;

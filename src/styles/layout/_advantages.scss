@@ -1,0 +1,68 @@
+.wrapper--advantages {
+  background: #62a4c1;
+}
+
+.advantages {
+  padding: 12vh 0;
+  overflow: hidden;
+  &__title {
+    line-height: 40px;
+    color: $white;
+  }
+  &-item {
+    @include  make-lg-column(2);
+    @include make-lg-column-offset(1);
+    max-width: 179px;
+    margin: 45px 0 0;
+    &__image {
+      position: relative;
+      padding: 5px;
+      border: 5px dashed $purple;
+      border-radius: 100%;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &__icon {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      width: 77px;
+      height: 39px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 39px;
+      border-radius: 13px;
+      background: #ffb018;
+      @include font-face($font-ubuntu-regular, 28px, 37px, $white);
+    }
+    &__description {
+      max-width: 120px;
+      margin: 20px auto 0;
+      text-align: center;
+      @include font-face($font-ubuntu-regular, 16px, 19px, $white);
+    }
+    &:first-child {
+      margin-left: 60px;
+    }
+    &:nth-child(2) {
+      .advantages-item__icon {
+        background: $coral;
+      }
+    }
+    &:nth-child(3) {
+      .advantages-item__icon {
+        margin-top: 1px;
+        background: #4c53e1 url(/images/advantages/finger-up.png) center 48% no-repeat;
+      }
+    }
+    &:nth-child(4) {
+      .advantages-item__icon {
+        margin-top: 1px;
+        background: #e1d11c url(/images/advantages/check.png) center 50% no-repeat;
+      }
+    }
+  }
+}

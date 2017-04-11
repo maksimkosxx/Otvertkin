@@ -1,0 +1,48 @@
+.wrapper--info {
+  background: #6a8aac url(/images/icons/screw.png);
+}
+.info {
+  min-height: 600px;
+  padding: 11vh 0;
+  box-sizing: border-box;
+  &__title {
+    line-height: 40px;
+    color: #79c1e2;
+  }
+  &-item {
+    min-height: 100px;
+    margin-top: 45px;
+    &__icon {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 34px;
+      height: 30px;
+      margin: 20px 10px 0 0;
+      span {
+        position: absolute;
+        background: #c2eae7;
+        border-radius: 2px;
+        &:first-child {
+          top: 3px;
+          left: 0;
+          width: 15px;
+          height: 4px;
+          transform: rotate(50deg);
+        }
+        &:last-child {
+          top: 0;
+          left: 6px;
+          width: 24px;
+          height: 4px;
+          transform: rotate(-50deg);
+        }
+      }
+    }
+    &__description {
+      display: inline-block;
+      max-width: 87%;
+      @include font-face($font-ubuntu-regular, 16px, 23px, $white);
+    }
+  }
+}

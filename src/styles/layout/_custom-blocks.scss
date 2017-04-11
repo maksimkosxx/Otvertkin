@@ -1,0 +1,122 @@
+.wrapper--grey {
+  background: $grey;
+}
+.wrapper--lilac {
+  background: $lilac;
+}
+.wrapper--dark-grey {
+  background: #e6dcd5;
+}
+.wrapper--coral {
+  background: $coral;
+}
+.wrapper--gradient {
+  background: linear-gradient(to right, #8dddad, #73c9ca);
+}
+.diagnostics,
+.guarantee {
+  .slogan {
+    color: $white;
+  }
+}
+.custom-block {
+  &__link {
+    display: block;
+    margin-top: 30px;
+    @include font-face($font-family-medium, $font-size-medium, 22px, $black);
+  }
+  &.about {
+    .custom-block__text {
+      margin-top: 40px;
+    }
+  }
+}
+.guarantee {
+  min-height: 400px;
+  .custom-block__image {
+    margin-top: 25px;
+  }
+}
+.custom-block--schedule {
+  min-height: inherit;
+  padding: 9vh 0 13vh;
+  .custom-block__text {
+    margin-top: 40px;
+  }
+}
+.schedule-item {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 70px;
+  margin-right: 15px;
+  &__orders {
+    margin: 7px 0 10px;
+    text-align: center;
+  }
+  &__orders,
+  &__year {
+    @include font-face($font-family-medium, $font-size-medium, 22px, $white);
+  }
+  &__year {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__column {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 13px 13px 0 0;
+  }
+  &:first-child {
+    .schedule-item__column {
+      width: 100%;
+      min-height: 140px;
+      background: #ee8c8c;
+    }
+  }
+  &:nth-child(2) {
+    .schedule-item__column {
+      min-height: 180px;
+      background: #f9a5a5;
+    }
+  }
+  &:nth-child(3) {
+    .schedule-item__column {
+      min-height: 220px;
+      background: #f8b9b9;
+    }
+  }
+  &:nth-child(4) {
+    .schedule-item__column {
+      min-height: 260px;
+      background: #f8b9b9;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+    .schedule-item__column {
+      min-height: 300px;
+      background: #ffd8d8;
+    }
+  }
+}
+.wrapper--order {
+   background: #e8e8e8;
+  .custom-block__text {
+    margin-top: 40px;
+  }
+  &+.wrapper--contacts {
+      background: linear-gradient(#e8e8e8, $white);
+      .contacts {
+        padding: 5vh 0;
+    }
+  }
+  .custom-block {
+    min-height: 400px;
+    padding: 9vh 0 6vh;
+    border-bottom: 3px dashed $white;
+  }
+}

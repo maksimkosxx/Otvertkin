@@ -1,0 +1,34 @@
+.breadcrumbs {
+  @include make-lg-column(12);
+  margin: 5vh 0 0;
+  box-sizing: border-box;
+  ul {
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      &:last-child {
+        a {
+          color: #81c3c9;
+          text-decoration: none;
+          pointer-events: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        content:'';
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        height: 8px;
+        margin: 0 7px 0 10px;
+        border-radius: 3px;
+        background: #e5e5e5;
+      }
+      a {
+        color: #aeaeae;
+      }
+    }
+  }
+}

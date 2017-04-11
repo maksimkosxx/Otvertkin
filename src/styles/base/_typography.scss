@@ -71,6 +71,15 @@
   src: url('/fonts/MyriadPro/MyriadProRegular.woff') format('woff'),
   url('/fonts/MyriadPro/MyriadProRegular.ttf') format('ttf');
 }
+@font-face {
+  font-family: 'UbuntuRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Ubuntu/UbuntuR.ttf') format('ttf'),
+  url('/fonts/Ubuntu/UbuntuR.woff') format('woff'),
+  url('/fonts/Ubuntu/UbuntuR.otf') format('otf'),
+  url('/fonts/Ubuntu/UbuntuR.svg') format('svg');
+}
 
 
 

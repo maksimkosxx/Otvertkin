@@ -1,4 +1,4 @@
-//глобальные переменные, вспомогательные селекторы и т. д.;
+//глобальные переменные
 
 // fonts variables
 
@@ -11,12 +11,13 @@ $font-family-italic: IskraCyrItalic, sans-serif;
 $font-family-proxima: ProximaNovaRegular, sans-serif;
 $font-myriad-bold: MyriadProBold, sans-serif;
 $font-myriad-regular: MyriadProRegular, sans-serif;
+$font-ubuntu-regular: UbuntuRegular, sans-serif;
 
 $font-size-base: 14px!default;
 $font-size-medium: $font-size-base * 1.29;
 $font-size-large: $font-size-base * 2;
 $font-size-h1: $font-size-large + 18px;
-$font_size__title: $font-size-h1 - 4px ;
+$font_size__title: $font-size-h1 - 6px ;
 
 $line-height-base: 1.4;
 $height_medium: $line-height-base + 5px;
