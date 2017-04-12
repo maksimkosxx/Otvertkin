@@ -15,6 +15,10 @@
   margin-right: 40px;
   padding: 0 10px;
   box-sizing: border-box;
+  @include respond-to(handhelds) {
+    float: none;
+    margin: 0 auto;
+  }
   &__header{
     padding: 13px 0 12px 45px;
     background: transparent;
@@ -83,6 +87,10 @@
   &__link {
     padding-left: 30px;
     @include font-face($font-ubuntu-regular, 14px, 43px, #6fca79);
+    @include respond-to(handhelds) {
+      display: block;
+      margin-top: 20px;
+    }
   }
   &__title {
     margin: 0 0 20px 30px;
@@ -127,12 +135,15 @@
     max-width: 443px;
     width: 100%;
     @include font-face($font-ubuntu-regular, 14px, $font-size-base, $black);
+    @include respond-to(handhelds) {
+      margin-bottom: 20px;
+    }
   }
   &__cost {
     display: inline-block;
     vertical-align: middle;
     max-width: 177px;
-    width: 50%;
+    width: 30%;
     margin-right: 30px;
     @include font-face($font-ubuntu-regular, 20px, $font-size-base, $black);
     text-align: center;
@@ -154,5 +165,8 @@
   min-height: 250px;
   background: linear-gradient(rgba(49%, 68%, 78%, 0.8), #62a4c1);
 }
+
+
+
 
 

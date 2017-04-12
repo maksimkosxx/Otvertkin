@@ -5,6 +5,9 @@
 .advantages {
   padding: 12vh 0;
   overflow: hidden;
+  @include respond-to(handhelds) {
+    padding: 7vh 0;
+  }
   &__title {
     line-height: 40px;
     color: $white;
@@ -14,6 +17,9 @@
     @include make-lg-column-offset(1);
     max-width: 179px;
     margin: 45px 0 0;
+    @include respond-to(handhelds) {
+      margin: 45px auto 0;
+    }
     &__image {
       position: relative;
       padding: 5px;
@@ -46,6 +52,9 @@
     }
     &:first-child {
       margin-left: 60px;
+      @include respond-to(handhelds) {
+        margin-left: auto;
+      }
     }
     &:nth-child(2) {
       .advantages-item__icon {

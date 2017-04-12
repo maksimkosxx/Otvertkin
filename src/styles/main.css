@@ -1203,6 +1203,11 @@ h1 {
   font: 46px IskraCyrMedium, sans-serif;
   line-height: 54px;
   color: #303030; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    h1 {
+      font: 31px IskraCyrMedium, sans-serif;
+      line-height: 39px;
+      color: #303030; } }
 
 .custom-block {
   min-height: 520px;
@@ -1219,12 +1224,27 @@ h1 {
   font: 40px IskraCyrMedium, sans-serif;
   line-height: 54px;
   color: #303030; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .title {
+      font: 24px IskraCyrMedium, sans-serif;
+      line-height: 39px;
+      color: #303030; } }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .title {
+      font: 35px IskraCyrMedium, sans-serif;
+      line-height: 49px;
+      color: #303030; } }
 
 .slogan {
   margin-bottom: 5px;
   font: 28px IskraCyrRegular, sans-serif;
   line-height: 1.4;
   color: #d98077; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .slogan {
+      font: 20px IskraCyrRegular, sans-serif;
+      line-height: 1.4;
+      color: #d98077; } }
 
 a.phone__number {
   text-decoration: none;
@@ -1260,6 +1280,14 @@ a.phone__number {
   transition: all 0.2s linear; }
   .btn--header:hover {
     background: linear-gradient(to right, #79ce6d, #79ce6d); }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .btn--header {
+      width: 100%;
+      max-width: 355px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 25px;
+      line-height: 78px; } }
 
 .btn--green {
   max-width: 305px;
@@ -1280,6 +1308,9 @@ a.phone__number {
   letter-spacing: 1px; }
   .btn--green:hover {
     background: #79ce6d; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .btn--green {
+      font-size: 20px; } }
 
 .btn--coral {
   max-width: 305px;
@@ -1301,6 +1332,11 @@ a.phone__number {
   letter-spacing: 1px; }
   .btn--coral:active, .btn--coral:hover {
     background: #c86055; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .btn--coral {
+      display: block;
+      margin: 0 auto;
+      font-size: 20px; } }
 
 .header {
   padding-top: 10px; }
@@ -1335,6 +1371,9 @@ a.phone__number {
   float: right !important;
   text-align: right;
   background: url(/images/icons/phone.png) 3% 55% no-repeat; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .phone {
+      background: none; } }
 
 .menu {
   float: right !important; }
@@ -1466,6 +1505,15 @@ a.phone__number {
     font: 18.06px MuseoSansCyrl500, sans-serif;
     line-height: 1.75;
     color: #303030; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .promo__image {
+      display: none; } }
+
+.promo-image__price {
+  box-sizing: border-box; }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .promo-image__price {
+      display: none; } }
 
 .price__cloud {
   position: relative;
@@ -1514,6 +1562,10 @@ a.phone__number {
   margin-right: 40px;
   padding: 0 10px;
   box-sizing: border-box; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .price-switches {
+      float: none;
+      margin: 0 auto; } }
   .price-switches__header {
     padding: 13px 0 12px 45px;
     background: transparent;
@@ -1572,6 +1624,10 @@ a.phone__number {
     font: 14px UbuntuRegular, sans-serif;
     line-height: 43px;
     color: #6fca79; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .price-content__link {
+        display: block;
+        margin-top: 20px; } }
   .price-content__title {
     margin: 0 0 20px 30px;
     font: 24px IskraCyrMedium, sans-serif;
@@ -1604,11 +1660,14 @@ a.phone__number {
     font: 14px UbuntuRegular, sans-serif;
     line-height: 14px;
     color: #303030; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .price-content__service {
+        margin-bottom: 20px; } }
   .price-content__cost {
     display: inline-block;
     vertical-align: middle;
     max-width: 177px;
-    width: 50%;
+    width: 30%;
     margin-right: 30px;
     font: 20px UbuntuRegular, sans-serif;
     line-height: 14px;
@@ -1661,6 +1720,36 @@ a.phone__number {
 .custom-block.about .custom-block__text {
   margin-top: 40px; }
 
+.custom-block__image img {
+  max-width: 100%; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-block__image {
+    order: -1;
+    margin-bottom: 40px; }
+    .custom-block__image img {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .custom-block__image {
+    box-sizing: border-box; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .custom-block__schedule {
+    box-sizing: border-box; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .custom-block__schedule {
+    margin: 65px 0 0 30px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-block {
+    display: flex;
+    flex-flow: column wrap; } }
+
 .guarantee {
   min-height: 400px; }
   .guarantee .custom-block__image {
@@ -1671,6 +1760,9 @@ a.phone__number {
   padding: 9vh 0 13vh; }
   .custom-block--schedule .custom-block__text {
     margin-top: 40px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .custom-block--schedule {
+      padding: 0 0 12vh; } }
 
 .schedule-item {
   display: inline-block;
@@ -1713,6 +1805,12 @@ a.phone__number {
     .schedule-item:last-child .schedule-item__column {
       min-height: 300px;
       background: #ffd8d8; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .schedule-item {
+      width: 15%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .schedule-item {
+      width: 65px; } }
 
 .wrapper--order {
   background: #e8e8e8; }
@@ -1726,6 +1824,9 @@ a.phone__number {
     min-height: 400px;
     padding: 9vh 0 6vh;
     border-bottom: 3px dashed #fff; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .wrapper--order {
+      margin-top: 0; } }
 
 .wrapper--advantages {
   background: #62a4c1; }
@@ -1733,6 +1834,9 @@ a.phone__number {
 .advantages {
   padding: 12vh 0;
   overflow: hidden; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .advantages {
+      padding: 7vh 0; } }
   .advantages__title {
     line-height: 40px;
     color: #fff; }
@@ -1750,6 +1854,9 @@ a.phone__number {
     @media (min-width: 1200px) {
       .advantages-item {
         margin-left: 8.3333333333%; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .advantages-item {
+        margin: 45px auto 0; } }
     .advantages-item__image {
       position: relative;
       padding: 5px;
@@ -1782,6 +1889,9 @@ a.phone__number {
       color: #fff; }
     .advantages-item:first-child {
       margin-left: 60px; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .advantages-item:first-child {
+          margin-left: auto; } }
     .advantages-item:nth-child(2) .advantages-item__icon {
       background: #d98077; }
     .advantages-item:nth-child(3) .advantages-item__icon {
@@ -1798,6 +1908,9 @@ a.phone__number {
   min-height: 600px;
   padding: 11vh 0;
   box-sizing: border-box; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .info {
+      padding: 6vh 0 9vh; } }
   .info__title {
     line-height: 40px;
     color: #79c1e2; }
@@ -1833,9 +1946,16 @@ a.phone__number {
       font: 16px UbuntuRegular, sans-serif;
       line-height: 23px;
       color: #fff; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .info-item__description {
+          max-width: 80%; } }
 
 .order-form {
   margin-top: 40px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .order-form {
+      max-width: 320px;
+      margin: 40px auto 0; } }
   .order-form form label {
     display: none; }
   .order-form form input[type='text'] {
@@ -1850,6 +1970,11 @@ a.phone__number {
       .order-form form input[type='text'] {
         float: left;
         width: 25%; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .order-form form input[type='text'] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px; } }
   .order-form form input[type='submit'] {
     position: relative;
     min-height: 1px;
@@ -1876,6 +2001,9 @@ a.phone__number {
     .order-form form input[type='submit']:active {
       background: #5dd4b7;
       transition: all 0.2s linear; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .order-form form input[type='submit'] {
+        margin-top: 10px; } }
 
 .wrapper--contacts {
   background: #e8e8e8; }
@@ -1898,23 +2026,35 @@ a.phone__number {
     font: 26px IskraCyrMedium, sans-serif;
     line-height: 42px;
     color: #303030; }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .contacts-item__phone {
+        font-size: 22px; } }
   .contacts-item::after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     display: block;
     width: 3px;
     height: 100%;
     background: #fff; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .contacts-item::after {
+        display: none; } }
   .contacts-item:last-child {
     margin-right: 0; }
     .contacts-item:last-child::after {
       display: none; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contacts-item {
+      margin: 20px 0 0; } }
 
 .map {
   width: 100%;
   height: 500px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .map {
+      pointer-events: none; } }
 
 .footer {
   padding: 5vh 0 30px;
@@ -1923,6 +2063,10 @@ a.phone__number {
     color: #382f59; }
   .footer .phone__number {
     color: #fff; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .footer .phone__number {
+        display: block;
+        margin-top: 40px; } }
 
 .wrapper--blue {
   background-image: url(/images/icons/screw.png), linear-gradient(to right, #71b6d0, #6aa0db); }
@@ -1937,8 +2081,22 @@ a.phone__number {
     clear: both; }
   .services__image {
     margin-top: 30px; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .services__image {
+        margin: 0 0 40px;
+        box-sizing: border-box; }
+        .services__image img {
+          max-width: 50%; } }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .services__image {
+        box-sizing: border-box; }
+        .services__image img {
+          max-width: 150px; } }
   .services__items {
-    padding-left: 70px; }
+    padding-left: 5vw; }
+    @media only screen and (min-width: 320px) and (max-width: 1000px) {
+      .services__items {
+        box-sizing: border-box; } }
   .services-item {
     float: left;
     display: block;
@@ -1953,6 +2111,16 @@ a.phone__number {
       min-height: 65px;
       margin-bottom: 13px;
       overflow: hidden; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .services-item__header {
+          max-width: 100%; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .services-item {
+        float: none;
+        margin: 0 auto 30px auto; } }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .services-item {
+        max-width: 250px; } }
 
 .services-header__price {
   float: left;
@@ -1968,9 +2136,15 @@ a.phone__number {
   font: 16px MyriadProBold, sans-serif;
   line-height: 32px;
   color: #fff; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .services-header__price {
+      float: right; } }
 
 .services-header__icon {
   float: right; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .services-header__icon {
+      float: left; } }
 
 .services-item__links div {
   margin-bottom: 10px;
@@ -1986,25 +2160,31 @@ a.phone__number {
 
 .price {
   padding: 9vh 0 11vh; }
-  .price .price-list {
-    margin-top: 30px;
+  .price-list {
+    margin-top: 3vh;
     box-sizing: border-box; }
-    .price .price-list:before, .price .price-list:after {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .price-list {
+        margin-top: 0; } }
+    .price-list:before, .price-list:after {
       content: " ";
       display: table; }
-    .price .price-list:after {
+    .price-list:after {
       clear: both; }
-    .price .price-list__header {
+    .price-list__header {
       width: 100%;
       padding: 10px 0;
       border-radius: 20px;
       background: #e4e4e4; }
-      .price .price-list__header:before, .price .price-list__header:after {
+      .price-list__header:before, .price-list__header:after {
         content: " ";
         display: table; }
-      .price .price-list__header:after {
+      .price-list__header:after {
         clear: both; }
-    .price .price-list__cell {
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .price-list__header {
+          display: none; } }
+    .price-list__cell {
       padding-left: 45px;
       border-right: 2px solid #fff;
       font: 16px IskraCyrMedium, sans-serif;
@@ -2012,36 +2192,52 @@ a.phone__number {
       color: #303030;
       text-transform: uppercase;
       letter-spacing: 1px; }
-      .price .price-list__cell:last-child {
+      .price-list__cell:last-child {
         border-right: none; }
-    .price .price-list__services {
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .price-list__cell {
+          padding-left: 0; } }
+      @media only screen and (min-width: 768px) and (max-width: 1000px) {
+        .price-list__cell {
+          padding-left: 30px; } }
+    .price-list__services {
       box-sizing: border-box; }
-      .price .price-list__services .price-list__row {
+      .price-list__services .price-list__row {
         display: block;
         padding: 30px 0;
-        border-bottom: 2px dashed #e4e4e4; }
-        .price .price-list__services .price-list__row:before, .price .price-list__services .price-list__row:after {
+        border-bottom: 2px dashed #e4e4e4;
+        text-decoration: none; }
+        .price-list__services .price-list__row:before, .price-list__services .price-list__row:after {
           content: " ";
           display: table; }
-        .price .price-list__services .price-list__row:after {
+        .price-list__services .price-list__row:after {
           clear: both; }
-        .price .price-list__services .price-list__row span {
+        .price-list__services .price-list__row span {
           display: block; }
-        .price .price-list__services .price-list__row:hover .cell--name {
+        .price-list__services .price-list__row:hover .cell--name {
           text-decoration: none; }
-        .price .price-list__services .price-list__row:last-child {
+        .price-list__services .price-list__row:last-child {
           border-bottom: none; }
-      .price .price-list__services .cell--name {
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+          .price-list__services .price-list__row:first-child {
+            padding: 15px 0 30px; } }
+      .price-list__services .cell--name {
         text-decoration: underline;
         font: 14px IskraCyrRegular, sans-serif;
         line-height: 22px;
         color: #303030; }
-      .price .price-list__services .cell--description {
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+          .price-list__services .cell--name {
+            margin-bottom: 5px; } }
+        @media only screen and (min-width: 768px) and (max-width: 1000px) {
+          .price-list__services .cell--name {
+            font-size: 13px; } }
+      .price-list__services .cell--description {
         text-transform: none;
         font: 14px MuseoSansCyrl500, sans-serif;
         line-height: 22px;
         color: #7c7c7c; }
-      .price .price-list__services .cell--price {
+      .price-list__services .cell--price {
         text-transform: none;
         font: 31px MuseoSansCyrl500, sans-serif;
         line-height: 50px;
@@ -2052,6 +2248,14 @@ a.phone__number {
     .price-footer__link {
       margin-left: 60px;
       color: #7c7c7c; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .price-footer__link {
+          display: block;
+          width: 90px;
+          margin: 20px auto 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .price {
+      padding: 7vh 0; } }
 
 .wrapper--inner {
   background: #7dc2c7; }
@@ -2061,6 +2265,11 @@ a.phone__number {
   padding: 0 0 7vh; }
   .custom-block.page--about .custom-block__text {
     margin-top: 40px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .custom-block.page--about .custom-block__image {
+      display: none; }
+    .custom-block.page--about .custom-block__text {
+      margin-top: 20px; } }
 
 .staff {
   padding-bottom: 10vh;
@@ -2111,6 +2320,15 @@ a.phone__number {
   font: 11px UbuntuRegular, sans-serif;
   line-height: 14px;
   color: #303030; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .staff-item__description {
+      max-width: 55%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .staff-item {
+    float: none;
+    max-width: 200px;
+    margin: 40px auto 0; } }
 
 .wrapper--servers {
   position: relative;

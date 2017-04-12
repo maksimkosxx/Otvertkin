@@ -23,6 +23,9 @@
     float:right!important;
     text-align: right;
     background: url(/images/icons/phone.png) 3% 55% no-repeat;
+    @include respond-to(handhelds) {
+      background: none;
+    }
 }
 .menu {
   float:right!important;

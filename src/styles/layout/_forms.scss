@@ -1,5 +1,9 @@
 .order-form {
   margin-top: 40px;
+  @include respond-to(handhelds) {
+    max-width: 320px;
+    margin: 40px auto 0;
+  }
   form {
     label {
       display: none;
@@ -9,6 +13,11 @@
       height: 40px;
       margin-right: 10px;
       border: none;
+      @include respond-to(handhelds) {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
     }
     input[type='submit'] {
       @include make-lg-column(4);
@@ -28,6 +37,9 @@
       &:active {
         background: #5dd4b7;
         transition: all 0.2s linear;
+      }
+      @include respond-to(handhelds) {
+        margin-top: 10px;
       }
     }
   }

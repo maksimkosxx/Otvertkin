@@ -7,6 +7,14 @@
   .custom-block__text {
     margin-top: 40px;
   }
+  @include respond-to(handhelds) {
+    .custom-block__image {
+      display: none;
+    }
+    .custom-block__text {
+      margin-top: 20px;
+    }
+  }
 }
 .staff {
   padding-bottom: 10vh;
@@ -54,7 +62,14 @@
   }
   &__description {
     @include font-face($font-ubuntu-regular, 11px, 14px, $black);
+    @include respond-to(handhelds) {
+      max-width: 55%;
+    }
   }
-
+  @include respond-to(handhelds) {
+    float: none;
+    max-width: 200px;
+    margin: 40px auto 0;
+  }
 }
 

@@ -5,6 +5,9 @@
   min-height: 600px;
   padding: 11vh 0;
   box-sizing: border-box;
+  @include respond-to(handhelds) {
+    padding: 6vh 0 9vh;
+  }
   &__title {
     line-height: 40px;
     color: #79c1e2;
@@ -43,6 +46,9 @@
       display: inline-block;
       max-width: 87%;
       @include font-face($font-ubuntu-regular, 16px, 23px, $white);
+      @include respond-to(handhelds) {
+        max-width: 80%;
+      }
     }
   }
 }

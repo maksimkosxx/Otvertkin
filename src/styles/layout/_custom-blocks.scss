@@ -30,6 +30,36 @@
       margin-top: 40px;
     }
   }
+  &__image {
+    img {
+      max-width: 100%;
+    }
+    @include respond-to(handhelds) {
+      order: -1;
+      margin-bottom: 40px;
+      img {
+       display: block;
+       max-width: 300px;
+       width: 100%;
+       margin: 0 auto;
+     }
+    }
+    @include respond-to(handhelds + tablets) {
+      box-sizing: border-box;
+    }
+  }
+  &__schedule {
+    @include respond-to(handhelds + tablets) {
+      box-sizing: border-box;
+    }
+    @include respond-to(tablets) {
+      margin: 65px 0 0 30px;
+    }
+  }
+  @include respond-to(handhelds) {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
 .guarantee {
   min-height: 400px;
@@ -43,7 +73,11 @@
   .custom-block__text {
     margin-top: 40px;
   }
+  @include respond-to(handhelds) {
+    padding: 0 0 12vh;
+  }
 }
+
 .schedule-item {
   display: inline-block;
   vertical-align: bottom;
@@ -102,6 +136,12 @@
       background: #ffd8d8;
     }
   }
+  @include respond-to(handhelds) {
+    width: 15%;
+  }
+  @include respond-to(tablets) {
+    width: 65px;
+  }
 }
 .wrapper--order {
    background: #e8e8e8;
@@ -118,5 +158,8 @@
     min-height: 400px;
     padding: 9vh 0 6vh;
     border-bottom: 3px dashed $white;
+  }
+  @include respond-to(handhelds) {
+    margin-top: 0;
   }
 }

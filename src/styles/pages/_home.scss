@@ -8,9 +8,25 @@
   @include clearfix;
   &__image {
     margin-top: 30px;
+    @include respond-to(handhelds) {
+      margin: 0 0 40px;
+      box-sizing: border-box;
+      img {
+        max-width: 50%;
+      }
+    }
+    @include respond-to(tablets) {
+      box-sizing: border-box;
+      img {
+        max-width: 150px;
+      }
+    }
   }
   &__items {
-    padding-left: 70px;
+    padding-left: 5vw;
+    @include respond-to(handhelds + tablets) {
+      box-sizing: border-box;
+    }
   }
   &-item {
     float: left;
@@ -26,6 +42,16 @@
       min-height: 65px;
       margin-bottom: 13px;
       overflow: hidden;
+      @include respond-to(handhelds) {
+        max-width: 100%;
+      }
+    }
+    @include respond-to(handhelds) {
+      float: none;
+      margin: 0 auto 30px auto;
+    }
+    @include respond-to(tablets) {
+      max-width: 250px;
     }
   }
 }
@@ -41,9 +67,15 @@
   box-sizing: border-box;
   text-align: center;
   @include font-face($font-myriad-bold, 16px, 32px, $white);
+  @include respond-to(handhelds) {
+    float: right;
+  }
 }
 .services-header__icon {
   float: right;
+  @include respond-to(handhelds) {
+    float: left;
+  }
 }
 .services-item__links {
   div {
@@ -58,9 +90,12 @@
 
 .price {
   padding: 9vh 0 11vh;
-  .price-list {
-    margin-top: 30px;
+  &-list {
+    margin-top: 3vh;
     box-sizing: border-box;
+    @include respond-to(handhelds) {
+      margin-top: 0;
+    }
     @include clearfix;
     &__header {
       width: 100%;
@@ -68,6 +103,9 @@
       border-radius: 20px;
       background: #e4e4e4;
       @include clearfix;
+      @include respond-to(handhelds) {
+        display: none;
+      }
     }
     &__cell {
       padding-left: 45px;
@@ -78,6 +116,12 @@
       &:last-child {
         border-right: none;
       }
+      @include respond-to(handhelds) {
+        padding-left: 0;
+      }
+      @include respond-to(tablets) {
+        padding-left: 30px;
+      }
     }
     &__services {
       box-sizing: border-box;
@@ -85,6 +129,7 @@
         display: block;
         padding: 30px 0;
         border-bottom: 2px dashed #e4e4e4;
+        text-decoration: none;
         @include clearfix;
         span {
           display: block;
@@ -97,10 +142,21 @@
         &:last-child {
           border-bottom: none;
         }
+        @include respond-to(handhelds) {
+          &:first-child {
+            padding: 15px 0 30px;
+          }
+        }
       }
       .cell--name {
         text-decoration: underline;
         @include font-face($font-family-regular, $font-size-base, 22px, $black);
+        @include respond-to(handhelds) {
+          margin-bottom: 5px;
+        }
+        @include respond-to(tablets) {
+          font-size: 13px;
+        }
       }
       .cell--description {
         text-transform: none;
@@ -118,6 +174,14 @@
     &__link {
       margin-left: 60px;
       color: #7c7c7c;
+      @include respond-to(handhelds) {
+        display: block;
+        width: 90px;
+        margin: 20px auto 0;
+      }
     }
+  }
+  @include respond-to(tablets) {
+    padding: 7vh 0;
   }
 }

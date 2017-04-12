@@ -15,21 +15,30 @@
   margin: 15px 50px 0 0;
   &__phone {
     @include font-face($font-family-medium, 26px, 42px, $black);
+    @include respond-to(tablets) {
+      font-size: 22px;
+    }
   }
   &::after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     display: block;
     width: 3px;
     height: 100%;
     background: $white;
+    @include respond-to(handhelds) {
+      display: none;
+    }
   }
   &:last-child {
     margin-right: 0;
     &::after {
       display: none;
     }
+  }
+  @include respond-to(handhelds) {
+    margin: 20px 0 0;
   }
 }

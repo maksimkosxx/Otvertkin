@@ -17,9 +17,17 @@
       margin-top: 40px;
       @include font-face($font-family-base, $font-size-medium, $height_big, $black);
     }
+    @include respond-to(handhelds) {
+      display: none;
+    }
   }
 }
-
+.promo-image__price {
+  box-sizing: border-box;
+  @include respond-to(tablets) {
+    display: none;
+  }
+}
 .price__cloud {
   position: relative;
   float: right;
@@ -51,4 +59,5 @@
     background: linear-gradient(to bottom, #ffadad, #ffb4b4);
 
   }
+
 }
