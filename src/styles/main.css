@@ -1628,7 +1628,7 @@ a.phone__number {
     text-align: center;
     background: #e68286; }
 
-.wrapper--middle {
+.wrapper--abstract {
   min-height: 250px;
   background: linear-gradient(rgba(125, 173, 199, 0.8), #62a4c1); }
 
@@ -2112,7 +2112,7 @@ a.phone__number {
   line-height: 14px;
   color: #303030; }
 
-.wrapper--promo-inner {
+.wrapper--servers {
   position: relative;
   padding-bottom: 5vh;
   background-image: url(/images/icons/screw.png), linear-gradient(#7dadc7, rgba(125, 173, 199, 0.8)); }
@@ -2131,3 +2131,28 @@ a.phone__number {
 
 .wrapper--promo-inner .promo-image__img {
   margin-top: 40px; }
+
+.wrapper--virus {
+  position: relative;
+  padding-bottom: 5vh;
+  background-image: url(/images/icons/screw.png), linear-gradient(#8171e2, rgba(129, 113, 226, 0.8)); }
+  .wrapper--virus .promo-text__title {
+    color: #fff; }
+  .wrapper--virus .promo-text__description {
+    color: #fff; }
+  .wrapper--virus .promo-image__img {
+    margin-top: 30px; }
+  .wrapper--virus .price-switches__header.ui-accordion-header-active {
+    border: 3px dashed #8171e2;
+    border-bottom: none; }
+  .wrapper--virus .price-switches__services.ui-accordion-content-active {
+    border: 3px dashed #8171e2;
+    border-top: none; }
+  .wrapper--virus .price-content__title {
+    color: #8171e2; }
+  .wrapper--virus .price-switches__service.active {
+    color: #8171e2; }
+
+.wrapper--abstract-virus {
+  min-height: 250px;
+  background: linear-gradient(rgba(129, 113, 226, 0.8), #62a4c1); }

@@ -1,0 +1,33 @@
+.wrapper--virus {
+  position: relative;
+  padding-bottom: 5vh;
+  background-image: url(/images/icons/screw.png),
+  linear-gradient(#8171e2, rgba(129, 113, 226, 0.8));
+  .promo-text__title {
+    color: $white;
+  }
+  .promo-text__description {
+    color: $white;
+  }
+  .promo-image__img {
+    margin-top: 30px;
+  }
+  .price-switches__header.ui-accordion-header-active {
+    border: 3px dashed $purple;
+    border-bottom: none;
+  }
+  .price-switches__services.ui-accordion-content-active {
+    border: 3px dashed $purple;
+    border-top: none;
+  }
+  .price-content__title {
+    color: $purple;
+  }
+  .price-switches__service.active {
+    color: $purple;
+  }
+}
+.wrapper--abstract-virus {
+  min-height: 250px;
+  background: linear-gradient(rgba(129, 113, 226, 0.8), #62a4c1);
+}
