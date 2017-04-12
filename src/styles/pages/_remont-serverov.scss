@@ -1,0 +1,21 @@
+.wrapper--promo-inner {
+  position: relative;
+  padding-bottom: 5vh;
+  background-image: url(/images/icons/screw.png),
+  linear-gradient(#7dadc7, rgba(49%, 68%, 78%, 0.8));
+}
+.wrapper--promo-inner {
+  .promo {
+    padding: 1vh 0 0;
+    min-height: 400px;
+  }
+  .promo-text__title {
+    color: $white;
+  }
+  .promo-text__description {
+    @include font-face($font-ubuntu-regular, 13px, 19px, $white);
+  }
+  .promo-image__img {
+    margin-top: 40px;
+  }
+}

@@ -16,8 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "3.2.1",
+    "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "ui": "^0.0.5",
+    "jquery-ui": "^1.12.1"
   }
 }

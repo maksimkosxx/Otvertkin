@@ -25,7 +25,8 @@
 //
 
 
-@import 'vendors/bootstrap';
+@import 'vendors/bootstrap',
+        'vendors/jquery-ui/jquery-ui';
 
 @import 'utils/variables',
         'utils/mixins',
@@ -40,6 +41,7 @@
 @import 'layout/header',
         'layout/breadcrumbs',
         'layout/promo',
+        'layout/price-inner',
         'layout/custom-blocks',
         'layout/advantages',
         'layout/info',
@@ -49,4 +51,5 @@
         'layout/footer';
 
 @import 'pages/home',
-        'pages/about';
+        'pages/about',
+        'pages/remont-serverov';
