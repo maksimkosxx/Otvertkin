@@ -26,6 +26,14 @@
   .price-switches__service.active {
     color: $purple;
   }
+  @include respond-to(tablets + laptop) {
+    .promo-image__img {
+      margin-top: 80px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 .wrapper--abstract-virus {
   min-height: 250px;

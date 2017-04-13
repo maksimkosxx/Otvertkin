@@ -71,6 +71,10 @@
       border-radius: 10px 10px 0 0;
     }
   }
+  @include  respond-to(tablets) {
+    max-width: 270px;
+    margin-right: 30px;
+  }
 }
 .price-content {
   float: left;
@@ -79,6 +83,12 @@
   height: 0;
   opacity: 0;
   box-sizing: border-box;
+  @include  respond-to(tablets) {
+    max-width: 468px;
+  }
+  @include  respond-to(laptop) {
+    max-width: 66%;
+  }
   &.active {
     height: auto;
     opacity: 1;
@@ -135,8 +145,12 @@
     max-width: 443px;
     width: 100%;
     @include font-face($font-ubuntu-regular, 14px, $font-size-base, $black);
-    @include respond-to(handhelds) {
+    @include respond-to(handhelds + tablets) {
       margin-bottom: 20px;
+      vertical-align: inherit;
+    }
+    @include respond-to(laptop) {
+      max-width: 40%;
     }
   }
   &__cost {
@@ -148,6 +162,9 @@
     @include font-face($font-ubuntu-regular, 20px, $font-size-base, $black);
     text-align: center;
     color: #4ebca2;
+    @include respond-to(laptop) {
+      max-width: 20%;
+    }
   }
   &__btn {
     display: inline-block;
@@ -159,6 +176,10 @@
     @include font-face($font-ubuntu-regular, 18px, 40px, $white);
     text-align: center;
     background: #e68286;
+    @include  respond-to(tablets) {
+      float: right;
+      margin-right: 40px;
+    }
   }
 }
 .wrapper--abstract {

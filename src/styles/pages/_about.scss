@@ -27,6 +27,7 @@
   }
 }
 .staff-item {
+  margin-bottom: 30px;
   &__face {
     position: relative;
     display: table-cell;
@@ -36,6 +37,9 @@
   .face-img {
     display: inline-block;
     vertical-align: bottom;
+    @include respond-to(tablets) {
+      max-width: 150px;
+    }
   }
   .nimbus-img {
     position: absolute;
@@ -70,6 +74,9 @@
     float: none;
     max-width: 200px;
     margin: 40px auto 0;
+  }
+  @include respond-to(tablets) {
+    min-height: 350px;
   }
 }
 

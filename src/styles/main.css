@@ -1607,6 +1607,10 @@ a.phone__number {
   .price-switches li:first-child .price-switches__header.ui-accordion-header-collapsed {
     border: 3px dashed #bfbfbf;
     border-radius: 10px 10px 0 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .price-switches {
+      max-width: 270px;
+      margin-right: 30px; } }
 
 .price-content {
   float: left;
@@ -1615,6 +1619,12 @@ a.phone__number {
   height: 0;
   opacity: 0;
   box-sizing: border-box; }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .price-content {
+      max-width: 468px; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    .price-content {
+      max-width: 66%; } }
   .price-content.active {
     height: auto;
     opacity: 1;
@@ -1660,9 +1670,13 @@ a.phone__number {
     font: 14px UbuntuRegular, sans-serif;
     line-height: 14px;
     color: #303030; }
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
+    @media only screen and (min-width: 320px) and (max-width: 1000px) {
       .price-content__service {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        vertical-align: inherit; } }
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .price-content__service {
+        max-width: 40%; } }
   .price-content__cost {
     display: inline-block;
     vertical-align: middle;
@@ -1674,6 +1688,9 @@ a.phone__number {
     color: #303030;
     text-align: center;
     color: #4ebca2; }
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .price-content__cost {
+        max-width: 20%; } }
   .price-content__btn {
     display: inline-block;
     vertical-align: middle;
@@ -1686,6 +1703,10 @@ a.phone__number {
     color: #fff;
     text-align: center;
     background: #e68286; }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .price-content__btn {
+        float: right;
+        margin-right: 40px; } }
 
 .wrapper--abstract {
   min-height: 250px;
@@ -1824,6 +1845,11 @@ a.phone__number {
     min-height: 400px;
     padding: 9vh 0 6vh;
     border-bottom: 3px dashed #fff; }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .wrapper--order .custom-block {
+        padding: 4vh 0; }
+        .wrapper--order .custom-block .custom-block__image {
+          display: none; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .wrapper--order {
       margin-top: 0; } }
@@ -1857,6 +1883,13 @@ a.phone__number {
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .advantages-item {
         margin: 45px auto 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      .advantages-item {
+        float: left;
+        box-sizing: border-box; } }
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .advantages-item {
+        margin-left: 40px; } }
     .advantages-item__image {
       position: relative;
       padding: 5px;
@@ -1865,6 +1898,11 @@ a.phone__number {
       .advantages-item__image img {
         display: inline-block;
         vertical-align: middle; }
+      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .advantages-item__image {
+          width: 140px; }
+          .advantages-item__image img {
+            width: 100%; } }
     .advantages-item__icon {
       position: absolute;
       bottom: -15px;
@@ -1892,6 +1930,9 @@ a.phone__number {
       @media only screen and (min-width: 320px) and (max-width: 767px) {
         .advantages-item:first-child {
           margin-left: auto; } }
+      @media only screen and (min-width: 768px) and (max-width: 1000px) {
+        .advantages-item:first-child {
+          margin-left: 0; } }
     .advantages-item:nth-child(2) .advantages-item__icon {
       background: #d98077; }
     .advantages-item:nth-child(3) .advantages-item__icon {
@@ -1975,6 +2016,26 @@ a.phone__number {
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 15px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .order-form form input[type='text'] {
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) and (min-width: 768px) {
+    .order-form form input[type='text'] {
+      float: left;
+      width: 25%; } }
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .order-form form input[type='text'] {
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1200px) and (min-width: 992px) {
+    .order-form form input[type='text'] {
+      float: left;
+      width: 25%; } }
   .order-form form input[type='submit'] {
     position: relative;
     min-height: 1px;
@@ -2004,6 +2065,16 @@ a.phone__number {
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       .order-form form input[type='submit'] {
         margin-top: 10px; } }
+    @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+      .order-form form input[type='submit'] {
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1200px) and (min-width: 992px) {
+    .order-form form input[type='submit'] {
+      float: left;
+      width: 33.3333333333%; } }
 
 .wrapper--contacts {
   background: #e8e8e8; }
@@ -2087,13 +2158,13 @@ a.phone__number {
         box-sizing: border-box; }
         .services__image img {
           max-width: 50%; } }
-    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
       .services__image {
         box-sizing: border-box; }
         .services__image img {
           max-width: 150px; } }
   .services__items {
-    padding-left: 5vw; }
+    padding-left: 4vw; }
     @media only screen and (min-width: 320px) and (max-width: 1000px) {
       .services__items {
         box-sizing: border-box; } }
@@ -2279,61 +2350,69 @@ a.phone__number {
   .staff__content {
     margin-top: 55px; }
 
-.staff-item__face {
-  position: relative;
-  display: table-cell;
-  vertical-align: bottom;
-  height: 220px; }
-
-.staff-item .face-img {
-  display: inline-block;
-  vertical-align: bottom; }
-
-.staff-item .nimbus-img {
-  position: absolute;
-  top: -3%;
-  left: 25%; }
-
-.staff-item .cap-img {
-  position: absolute;
-  top: -2%;
-  left: 22%; }
-
-.staff-item .flashes-img {
-  position: absolute;
-  top: -10%;
-  left: 22%; }
-
-.staff-item__name {
-  margin: 5px 0 0;
-  font: 20px IskraCyrMedium, sans-serif;
-  line-height: 28px;
-  color: #303030; }
-
-.staff-item__position {
-  margin: 0 0 7px;
-  font: 13px UbuntuRegular, sans-serif;
-  line-height: 20px;
-  color: #d98077; }
-
-.staff-item__description {
-  font: 11px UbuntuRegular, sans-serif;
-  line-height: 14px;
-  color: #303030; }
+.staff-item {
+  margin-bottom: 30px; }
+  .staff-item__face {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 220px; }
+  .staff-item .face-img {
+    display: inline-block;
+    vertical-align: bottom; }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .staff-item .face-img {
+        max-width: 150px; } }
+  .staff-item .nimbus-img {
+    position: absolute;
+    top: -3%;
+    left: 25%; }
+  .staff-item .cap-img {
+    position: absolute;
+    top: -2%;
+    left: 22%; }
+  .staff-item .flashes-img {
+    position: absolute;
+    top: -10%;
+    left: 22%; }
+  .staff-item__name {
+    margin: 5px 0 0;
+    font: 20px IskraCyrMedium, sans-serif;
+    line-height: 28px;
+    color: #303030; }
+  .staff-item__position {
+    margin: 0 0 7px;
+    font: 13px UbuntuRegular, sans-serif;
+    line-height: 20px;
+    color: #d98077; }
+  .staff-item__description {
+    font: 11px UbuntuRegular, sans-serif;
+    line-height: 14px;
+    color: #303030; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .staff-item__description {
+        max-width: 55%; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .staff-item__description {
-      max-width: 55%; } }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .staff-item {
-    float: none;
-    max-width: 200px;
-    margin: 40px auto 0; } }
+    .staff-item {
+      float: none;
+      max-width: 200px;
+      margin: 40px auto 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .staff-item {
+      min-height: 350px; } }
 
 .wrapper--servers {
   position: relative;
   padding-bottom: 5vh;
   background-image: url(/images/icons/screw.png), linear-gradient(#7dadc7, rgba(125, 173, 199, 0.8)); }
+  .wrapper--servers .promo-text__title,
+  .wrapper--servers .promo-text__description {
+    color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper--servers .promo-image__img {
+      margin-top: 80px; }
+      .wrapper--servers .promo-image__img img {
+        width: 100%; } }
 
 .wrapper--promo-inner .promo {
   padding: 1vh 0 0;
@@ -2370,6 +2449,11 @@ a.phone__number {
     color: #8171e2; }
   .wrapper--virus .price-switches__service.active {
     color: #8171e2; }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper--virus .promo-image__img {
+      margin-top: 80px; }
+      .wrapper--virus .promo-image__img img {
+        width: 100%; } }
 
 .wrapper--abstract-virus {
   min-height: 250px;

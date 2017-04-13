@@ -15,7 +15,7 @@
         max-width: 50%;
       }
     }
-    @include respond-to(tablets) {
+    @include respond-to(tablets + laptop) {
       box-sizing: border-box;
       img {
         max-width: 150px;
@@ -23,7 +23,7 @@
     }
   }
   &__items {
-    padding-left: 5vw;
+    padding-left: 4vw;
     @include respond-to(handhelds + tablets) {
       box-sizing: border-box;
     }

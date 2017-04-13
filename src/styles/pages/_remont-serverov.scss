@@ -3,6 +3,18 @@
   padding-bottom: 5vh;
   background-image: url(/images/icons/screw.png),
   linear-gradient(#7dadc7, rgba(49%, 68%, 78%, 0.8));
+  .promo-text__title,
+  .promo-text__description {
+    color: $white;
+  }
+  @include respond-to(tablets + laptop) {
+    .promo-image__img {
+      margin-top: 80px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 .wrapper--promo-inner {
   .promo {

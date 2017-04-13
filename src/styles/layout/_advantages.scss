@@ -20,6 +20,13 @@
     @include respond-to(handhelds) {
       margin: 45px auto 0;
     }
+    @include respond-to(tablets + laptop) {
+      float: left;
+      box-sizing: border-box;
+    }
+    @include respond-to(laptop) {
+      margin-left: 40px;
+    }
     &__image {
       position: relative;
       padding: 5px;
@@ -28,6 +35,12 @@
       img {
         display: inline-block;
         vertical-align: middle;
+      }
+      @include respond-to(tablets + laptop) {
+        width: 140px;
+        img {
+          width: 100%;
+        }
       }
     }
     &__icon {
@@ -54,6 +67,9 @@
       margin-left: 60px;
       @include respond-to(handhelds) {
         margin-left: auto;
+      }
+      @include respond-to(tablets) {
+        margin-left: 0;
       }
     }
     &:nth-child(2) {

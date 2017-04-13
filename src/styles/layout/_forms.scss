@@ -18,6 +18,12 @@
         box-sizing: border-box;
         margin-bottom: 15px;
       }
+      @include respond-to(tablets) {
+        @include make-sm-column(3);
+      }
+      @include respond-to(laptop) {
+        @include make-md-column(3);
+      }
     }
     input[type='submit'] {
       @include make-lg-column(4);
@@ -40,6 +46,9 @@
       }
       @include respond-to(handhelds) {
         margin-top: 10px;
+      }
+      @include respond-to(laptop) {
+        @include make-md-column(4);
       }
     }
   }
